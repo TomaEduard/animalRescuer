@@ -25,7 +25,11 @@ public class App
         firstAnimal.hungry = 8;
         firstAnimal.mood = "Neutral";
 
-        Animal secondAnimal = new Animal("Dog", "siberian", );
+//        Animal secondAnimal = new Animal("Dog", "Siberian Husky", "Rex", "0.7",
+//                "Medium", 1.4, 10, 9, "Sleppy", "Pedigree",
+//                "Walking");
+
+        Animal secondAnimal = new Animal();
         secondAnimal.race = "Siberian Husky";
         secondAnimal.name = "Rex";
         secondAnimal.gender = "Male";
