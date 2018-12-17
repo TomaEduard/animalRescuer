@@ -2,11 +2,7 @@ package org.fasttrackit;
 
 import java.time.Month;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
@@ -68,7 +64,6 @@ public class App
         firstVeterinarian.location = "Str. Decebal nr. 24";
         firstVeterinarian.contact = "0756405311";
         firstVeterinarian.price = 78;
-
 
 //        AnimalHygiene
         AnimalHygiene firstAnimalHygiene = new AnimalHygiene();
