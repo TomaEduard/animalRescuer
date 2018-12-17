@@ -2,8 +2,8 @@ package org.fasttrackit;
 
 public class Animal {
 
-    String type;
-    String race;                //rasa
+    private String type;
+    private String race;                //rasa
     String name;
     String gender;              //genul
     double age;
@@ -15,4 +15,11 @@ public class Animal {
     String favoriteFood;
     String favoriteRecreation;
 
+    public Animal(String type, String race) {
+        this.type = type;
+        this.race = race;
+
+    }
+
 }
+

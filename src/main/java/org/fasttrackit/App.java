@@ -25,13 +25,13 @@ public class App
         firstAnimal.hungry = 8;
         firstAnimal.mood = "Neutral";
 
-        Animal secondAnimal = new Animal();
-        secondAnimal.type = "Dog";
+        Animal secondAnimal = new Animal("Dog", "siberian", );
+        secondAnimal.race = "Siberian Husky";
         secondAnimal.name = "Rex";
         secondAnimal.gender = "Male";
-        secondAnimal.age = 4.1;
+        secondAnimal.age = 0.7;
         secondAnimal.waist = "Medium";
-        secondAnimal.weight = 4.6;
+        secondAnimal.weight = 1.4;
         secondAnimal.favoriteFood = "Pedigree";
         secondAnimal.favoriteRecreation = "Walking";
         secondAnimal.health = 10;
