@@ -1,51 +1,62 @@
 package org.fasttrackit;
 
+
+/*
+private String race;
+private String waist;
+private double weight;
+private String gender;
+*/
+
+
 public class Animal {
 
-    String type;
-    String race;                //rasa
-    String name;
-    String gender;              //genul
-    double age;
-    String waist;               //talie
-    double weight;              //greutatea
-    int health;
-    int hungry;
-    String mood;                //dispozitia
-    String favoriteFood;
-    String favoriteRecreation;
+    private String name;
+    private String color;
+    private double age;
+    private String gender;
 
 
-//    private String type;
-//    private String race;                //rasa
-//    private String name;
-//    private String gender;              //genul
-//    private double age;
-//    private String waist;               //talie
-//    private double weight;              //greutatea
-//    private int health;
-//    private int hungry;
-//    private String mood;                //dispozitia
-//    private String favoriteFood;
-//    private String favoriteRecreation;
-//
-//    public Animal(String type, String race, String name, double age,
-//                  String waist, double weight, int health, int hungry,
-//                  String mood, String favoriteFood, String favoriteRecreation) {
-//
-//        this.type = type;
-//        this.race = race;
-//        this.name = name;
-//        this.age = age;
-//        this.waist = waist;
-//        this.weight = weight;
-//        this.health = health;
-//        this.hungry = hungry;
-//        this.mood = mood;
-//        this.favoriteFood = favoriteFood;
-//        this.favoriteRecreation = favoriteRecreation;
-//
-//    }
+    public Animal(String name, String color, double age, String gender) {
+        this.name = name;
+        this.color = color;
+        this.age = age;
+        this.gender = gender;
+    }
 
+
+//
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getAge() {
+        return age;
+    }
+
+    public void setAge(double age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 }
 
