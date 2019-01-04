@@ -21,6 +21,7 @@ public class Adoptator {
                 food.getName() + " food to " + animal.getName() + ".");
     }
 
+
 //
 
     public String getName() {

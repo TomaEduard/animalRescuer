@@ -23,16 +23,16 @@ public class App {
 
         RecreationActivity firstRecreation = new RecreationActivity("Walked");
 
-
         Treatment firstTreatment = new Treatment("Pills");
         firstTreatment.setCost(13.99);
         firstTreatment.setDuration(45);
 
 
 
-
         firstAdoptator.Feed(firstAnimal,firstAnimalFood);
         firstRecreation.walking(firstAdoptator, firstAnimal);
+
+
 
     }
 
