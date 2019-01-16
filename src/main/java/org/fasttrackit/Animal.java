@@ -1,21 +1,15 @@
 package org.fasttrackit;
 
-
-/*
-private String race;
-private String waist;
-private double weight;
-private String gender;
-*/
-
-
 public class Animal {
 
+
+    public static boolean mood;
     private String name;
     private String color;
     private double age;
     private String gender;
 
+//
 
     public Animal(String name, String color, double age, String gender) {
         this.name = name;
@@ -24,6 +18,12 @@ public class Animal {
         this.gender = gender;
     }
 
+//
+
+    public String mood() {
+        return "The mood of the animal";
+
+    }
 
 //
 
@@ -57,6 +57,16 @@ public class Animal {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                '}';
     }
 }
 

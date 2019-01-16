@@ -10,6 +10,7 @@ public class Dog extends Animal {
     public Dog(String name, String color, double age, String gender) {
         super(name, color, age, gender);
     }
+//
 
 
 //
@@ -38,4 +39,18 @@ public class Dog extends Animal {
         this.weight = weight;
     }
 
+
+    @Override
+    public String mood() {
+        return getName() + " quits. \uD83D\uDC36 ";
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "race='" + race + '\'' +
+                ", waist='" + waist + '\'' +
+                ", weight=" + weight +
+                "} " + super.toString();
+    }
 }

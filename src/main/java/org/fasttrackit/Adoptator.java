@@ -8,8 +8,9 @@ public class Adoptator {
 
 //
 
-    public Adoptator(String name, Animal Animal) {
+    public Adoptator(String name, Animal Animal, int moneyavaible) {
         this.name = name;
+        this.moneyavaible = moneyavaible;
         this.myAnimal = myAnimal;
     }
 

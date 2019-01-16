@@ -5,7 +5,7 @@ public class RecreationActivity  {
     private String name;
 
 //
-    public RecreationActivity(String name) {
+    public RecreationActivity(String name, Adoptator firstAdoptator, Cat firstAnimal) {
         this.name = name;
     }
 
@@ -19,12 +19,14 @@ public class RecreationActivity  {
 
 //
 
-    public String getType() {
+
+    public String getName() {
         return name;
     }
 
-    public void setType(String type) {
-        this.name = type;
+    public void setName(String name) {
+        this.name = name;
     }
+
 
 }

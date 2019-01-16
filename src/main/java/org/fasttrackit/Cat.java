@@ -38,4 +38,18 @@ public class Cat extends Animal {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    @Override
+    public String mood() {
+        return getName() + " purrs. \uD83D\uDE3A";
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "race='" + race + '\'' +
+                ", waist='" + waist + '\'' +
+                ", weight=" + weight +
+                "} " + super.toString();
+    }
 }

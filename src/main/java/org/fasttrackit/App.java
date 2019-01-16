@@ -1,7 +1,5 @@
 package org.fasttrackit;
 
-import java.time.LocalDateTime;
-
 public class App {
     public static void main(String[] args) {
 
@@ -11,7 +9,10 @@ public class App {
         firstAnimal.setWaist("Medium");
         firstAnimal.setWeight(2.1);
 
-        Adoptator firstAdoptator = new Adoptator("John", firstAnimal);
+        Dog secondAnimal = new Dog("Puffy", "Brown", 1, "male");
+
+/*
+        Adoptator firstAdoptator = new Adoptator("John", firstAnimal, 355);
         firstAdoptator.setMoneyavaible(135);
 
         Veterinarian firstVeterinarian = new Veterinarian("Bob");
@@ -21,18 +22,19 @@ public class App {
         firstAnimalFood.setAvailability("In stock");
         firstAnimalFood.setExpiryDate(LocalDateTime.now().plusYears(10));
 
-        RecreationActivity firstRecreation = new RecreationActivity("Walked");
+        RecreationActivity firstRecreation = new RecreationActivity("Walked", firstAdoptator, firstAnimal );
 
         Treatment firstTreatment = new Treatment("Pills");
         firstTreatment.setCost(13.99);
         firstTreatment.setDuration(45);
 
-
-
         firstAdoptator.Feed(firstAnimal,firstAnimalFood);
         firstRecreation.walking(firstAdoptator, firstAnimal);
+*/
 
 
+        System.out.println(firstAnimal.mood());
+        System.out.println(secondAnimal.mood());
 
     }
 
