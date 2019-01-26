@@ -3,13 +3,14 @@ package org.fasttrackit;
 public class App {
     public static void main(String[] args) {
 
-        Cat firstAnimal = new Cat("Chaika", "White", 2, "Female");
-        firstAnimal.setName("Chaika");
-        firstAnimal.setRace("Bichon Maltese");
-        firstAnimal.setWaist("Medium");
-        firstAnimal.setWeight(2.1);
 
-        Dog secondAnimal = new Dog("Puffy", "Brown", 1, "male");
+        Animal animal = new Animal("Bobby", "Black", 3.1, "Male");
+        Animal firstAnimal = new Cat("Chaika", "White", 2, "Female");
+//        firstAnimal.setRace("Bichon Maltese");
+//        firstAnimal.setWaist("Medium");
+//        firstAnimal.setWeight(2.1);
+
+        Dog secondAnimal = new Dog("Puffy", "Brown", 1, "Male");
 
 /*
         Adoptator firstAdoptator = new Adoptator("John", firstAnimal, 355);
@@ -32,9 +33,10 @@ public class App {
         firstRecreation.walking(firstAdoptator, firstAnimal);
 */
 
+        animal.expressHappiness();
+        firstAnimal.expressHappiness();
+        secondAnimal.expressHappiness();
 
-        System.out.println(firstAnimal.mood());
-        System.out.println(secondAnimal.mood());
 
     }
 

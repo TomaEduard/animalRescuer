@@ -40,8 +40,8 @@ public class Cat extends Animal {
     }
 
     @Override
-    public String mood() {
-        return getName() + " purrs. \uD83D\uDE3A";
+    public void expressHappiness() {
+        System.out.println(getName() + " purrs. \uD83D\uDE3A");
     }
 
     @Override

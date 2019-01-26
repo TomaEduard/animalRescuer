@@ -41,8 +41,8 @@ public class Dog extends Animal {
 
 
     @Override
-    public String mood() {
-        return getName() + " quits. \uD83D\uDC36 ";
+    public void expressHappiness() {
+        System.out.println(getName() + " quits. \uD83D\uDC36 ");
     }
 
     @Override

@@ -20,9 +20,8 @@ public class Animal {
 
 //
 
-    public String mood() {
-        return "The mood of the animal";
-
+    public void expressHappiness() {
+       System.out.println("The mood of the animal");
     }
 
 //
