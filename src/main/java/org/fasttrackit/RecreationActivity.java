@@ -1,21 +1,20 @@
 package org.fasttrackit;
 
-public class RecreationActivity  {
+public class RecreationActivity {
 
     private String name;
 
-//
-    public RecreationActivity(String name, Adoptator firstAdoptator, Cat firstAnimal) {
+    //
+    public RecreationActivity(String name) {
         this.name = name;
     }
 
-
 //
 
-    public void walking(Adoptator adoptatorName, Animal animalName) {
-        System.out.println(adoptatorName.getName() + " just " + this.name +
-                " with " + animalName.getName() + ".");
-    }
+//    public void walking(Rescuer rescuerName, Animal animalName) {
+//        System.out.println(rescuerName.getName() + " just " + this.name +
+//                " with " + animalName.getName() + ".");
+//    }
 
 //
 

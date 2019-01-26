@@ -21,7 +21,7 @@ public class Animal {
 //
 
     public void expressHappiness() {
-       System.out.println("The mood of the animal");
+        System.out.println("The mood of the animal");
     }
 
 //
