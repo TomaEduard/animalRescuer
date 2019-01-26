@@ -9,6 +9,8 @@ public class App {
 
         Animal animal = new Animal("Bobby", "Black", 3.1, "Male");
         Animal firstAnimal = new Cat("Chaika", "White", 2, "Female");
+        firstAnimal.setFavoriteFoodName("Purina");
+        firstAnimal.setFavoriteActivityName("walked");
 //        firstAnimal.setRace("Bichon Maltese");
 //        firstAnimal.setWaist("Medium");
 //        firstAnimal.setWeight(2.1);
@@ -19,6 +21,11 @@ public class App {
         Veterinarian firstVeterinarian = new Veterinarian("Bob");
 
         AnimalFood firstAnimalFood = new AnimalFood("Purina", 14.99);
+        firstAnimalFood.setAmount(5);
+        firstAnimalFood.setAvailability("In stock");
+        firstAnimalFood.setExpiryDate(LocalDateTime.now().plusYears(10));
+
+        AnimalFood SecondAnimalFood = new AnimalFood("Pedigree", 14.99);
         firstAnimalFood.setAmount(5);
         firstAnimalFood.setAvailability("In stock");
         firstAnimalFood.setExpiryDate(LocalDateTime.now().plusYears(10));
@@ -34,13 +41,13 @@ public class App {
         firstRecreation.walking(firstAdoptator, firstAnimal);
 */
 
-        animal.expressHappiness();
-        firstAnimal.expressHappiness();
-        secondAnimal.expressHappiness();
+//        animal.expressHappiness();
+//        firstAnimal.expressHappiness();
+//        secondAnimal.expressHappiness();
 
-        firstRescuer.feed("Chaika", "Purina");
-        firstRescuer.entertain("Chaika", firstRecreation);
-        firstRescuer.entertain("Chaika", secondRecreation);
+//        firstRescuer.feed(firstAnimal, firstAnimalFood);
+        firstRescuer.entertain(firstAnimal, firstRecreation);
+//        firstRescuer.entertain("Chaika", secondRecreation);
 
     }
 
