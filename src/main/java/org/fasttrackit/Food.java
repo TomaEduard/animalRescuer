@@ -3,7 +3,7 @@ package org.fasttrackit;
 import java.time.LocalDateTime;
 
 
-public class AnimalFood {
+public class Food {
 
     private String name;
     private double price;
@@ -11,9 +11,8 @@ public class AnimalFood {
     private LocalDateTime expiryDate;
     private String Availability;
 
-    public AnimalFood(String name, double price) {
+    public Food(String name) {
         this.name = name;
-        this.price = price;
     }
 
 //

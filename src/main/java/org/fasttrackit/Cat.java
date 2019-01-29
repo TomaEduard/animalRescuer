@@ -2,7 +2,6 @@ package org.fasttrackit;
 
 public class Cat extends Animal {
 
-
     private String race;
     private String waist;
     private double weight;
