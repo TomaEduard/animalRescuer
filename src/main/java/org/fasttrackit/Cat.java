@@ -6,11 +6,12 @@ public class Cat extends Animal {
     private String waist;
     private double weight;
 
-
-    public Cat(String name, String color, double age, String gender) {
-        super(name, color, age, gender);
+    public Cat(String name, String color, double age, String gender, String favoriteFoodName, String favoriteActivityName, String race, String waist, double weight) {
+        super(name, color, age, gender, favoriteFoodName, favoriteActivityName);
+        this.race = race;
+        this.waist = waist;
+        this.weight = weight;
     }
-
 
 //
 

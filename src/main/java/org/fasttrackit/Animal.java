@@ -3,7 +3,7 @@ package org.fasttrackit;
 public class Animal {
 
 
-    public static boolean mood;
+    public boolean mood;
     private String name;
     private String color;
     private double age;
@@ -13,17 +13,19 @@ public class Animal {
 
 //
 
-    public Animal(String name, String color, double age, String gender) {
+    public Animal(String name, String color, double age, String gender, String favoriteFoodName, String favoriteActivityName) {
         this.name = name;
         this.color = color;
         this.age = age;
         this.gender = gender;
+        this.favoriteFoodName = favoriteFoodName;
+        this.favoriteActivityName = favoriteActivityName;
     }
 
 //
 
     public void expressHappiness() {
-        System.out.println("The mood of the animal");
+        System.out.println("No express happiness here");
     }
 
 //

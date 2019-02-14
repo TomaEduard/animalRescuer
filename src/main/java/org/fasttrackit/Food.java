@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 
 public class Food {
 
+
+
     private String name;
     private double price;
     private int amount;
@@ -13,6 +15,12 @@ public class Food {
 
     public Food(String name) {
         this.name = name;
+    }
+
+
+
+    public void addFoodItem(String item) {
+
     }
 
 //
