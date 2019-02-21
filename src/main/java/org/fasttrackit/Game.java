@@ -12,9 +12,8 @@ public class Game {
     private static Scanner scanner = new Scanner(System.in);
 
     private ArrayList<Food> avaibleFood = new ArrayList<>();
-    private EntertainmentActivity[] avaibleActivities = new EntertainmentActivity[2];
+    private EntertainmentActivity[] avaibleActivities = new EntertainmentActivity[3];
     private EntertainmentActivity entertainmentActivity;
-
 
 
     public void start() {
@@ -61,7 +60,7 @@ public class Game {
                     requireEntertain();
                 case 7:
                     displayFavoriteFoodAndActivitiy();
-                   break;
+                    break;
                 case 9:
                     quit = true;
                     break;
@@ -109,7 +108,6 @@ public class Game {
                 System.out.println("Enter a valid number.");
                 break;
         }
-
     }
 
     private void nameAnimal() {
@@ -198,7 +196,6 @@ public class Game {
                 "# " + avaibleFood.indexOf(newFood));
         displayFood();
     }
-
 
 /*
     public void modifyFoodItem () {

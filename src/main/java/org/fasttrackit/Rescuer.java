@@ -34,6 +34,7 @@ public class Rescuer {
         } else {
             System.out.println(animal.getName() + " is no longer hungry.");
         }
+        animal.expressHappiness();
     }
 
     public void walking(Animal animalName, EntertainmentActivity activity) {
