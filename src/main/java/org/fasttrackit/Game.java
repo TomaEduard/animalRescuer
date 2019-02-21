@@ -121,9 +121,9 @@ public class Game {
                 "To succeed in meeting animal needs, you need to reduce hunger and increase \n" +
                 "heppines level to complete the game and adopt another animal.\n" +
                 "\n" +
-                "* " + animal.getName() + "'s favorite food is  " + animal.getFavoriteFoodName() +
+                "*" + animal.getName() + "'s favorite food is " + animal.getFavoriteFoodName() +
                 " and sports is playing with ball.\n " +
-                "You can help with these tips to play the game in a timely manner. Have fun !");
+                "You can help with these tips to play the game in a timely manner. Have fun!");
     }
 
     private void initRescuer() {
