@@ -1,7 +1,14 @@
 package org.fasttrackit;
 
-public class Animal {
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
+public class Animal implements Runnable {
+
+    private ArrayList<String> food = new ArrayList<>();
 
     public boolean mood;
     private String name;
@@ -11,21 +18,40 @@ public class Animal {
     private String favoriteFoodName;
     private String favoriteActivityName;
 
-//
+    private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(2);
 
-    public Animal(String name, String color, double age, String gender, String favoriteFoodName, String favoriteActivityName) {
+
+    public Animal(String name, String color, double age, String gender,
+                  String favoriteFoodName, String favoriteActivityName) {
         this.name = name;
         this.color = color;
         this.age = age;
         this.gender = gender;
         this.favoriteFoodName = favoriteFoodName;
         this.favoriteActivityName = favoriteActivityName;
+        scheduler.scheduleAtFixedRate(this::run , 31, 31, TimeUnit.SECONDS);
+    }
+
+    @Override
+    public void run() {
+        food.add("Royal");
+        food.add("Amiry");
+        food.add("Friskies");
+
+        this.setFavoriteFoodName(food.get(new Random().nextInt(food.size() + 1)));
+
+        Food newFood = new Food(this.favoriteFoodName);
+        System.out.println("The Favorite food is now: " + this.getFavoriteFoodName());
+
     }
 
 //
 
     public void expressHappiness() {
         System.out.println("No express happiness here");
+    }
+    public void changeFavoriteFood() {
+
     }
 
 //

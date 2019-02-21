@@ -5,22 +5,23 @@ public class App {
 
         Rescuer firstRescuer = new Rescuer("Gigel");
 
-        Animal animal1 = new Animal("Bobby", "Black", 3.1,
-                "Male", "Pedigree", "playing with ball");
+//        Animal animal1 = new Animal("Bobby", "Black", 3.1,
+//                "Male", "Pedigree", "playing with ball");
+//
+////
+//        Animal cat1 = new Cat("Chaika", "White", 2, "Female", "Purina",
+//                "walked", "Bengal", "Medium", 2.1);
+//
+//        cat1.getFavoriteFoodName();
+//
+//        Animal Dog1 = new Dog("Puffy", "Brown", 1, "Male", "Pedigre",
+//                "playing with ball", "Bishon", "Small", 1.2);
 
-
-        Animal cat1 = new Cat("Chaika", "White", 2, "Female", "Purina",
-                "walked", "Bengal", "Medium", 2.1);
-/*
-
-        Animal Dog1 = new Dog("Puffy", "Brown", 1, "Male", "Pedigre",
-                "playing with ball", "Bishon", "Small", 1.2);
-*/
 
 
         Veterinarian firstVeterinarian = new Veterinarian("Bob");
 //
-        Food xxx = new Food("Purina");
+//        Food purina = new Food("Purina");
 //        purina.setPrice(14.99);
 //        purina.setAmount(5);
 //        purina.setAvailability("In stock");
@@ -40,8 +41,8 @@ public class App {
         firstTreatment.setCost(13.99);
         firstTreatment.setDuration(45);
 */
-        EntertainmentActivity activity1 = new EntertainmentActivity("walked");
-        EntertainmentActivity activity2 = new EntertainmentActivity("playing with ball");
+//        EntertainmentActivity activity1 = new EntertainmentActivity("walked");
+//        EntertainmentActivity activity2 = new EntertainmentActivity("playing with ball");
 
         Game game = new Game();
 
