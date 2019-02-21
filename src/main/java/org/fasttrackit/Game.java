@@ -76,8 +76,7 @@ public class Game {
                 "3 - To feed the animal.\n" +
                 "4 - To print the activities list. \n" +
                 "5 - To add the activity to the list. \n" +
-                "5 - To do an activity with animal. \n" +
-                "6 - To quit the application. \n" +
+                "6 - To do an activity with animal. \n" +
                 "7 - To show actually animal favourite food and activity. \n" +
                 "9 - To close the applicaion.");
     }

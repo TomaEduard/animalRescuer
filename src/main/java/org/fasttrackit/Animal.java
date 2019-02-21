@@ -49,7 +49,6 @@ public class Animal implements Runnable {
 
         Food newFood = new Food(this.favoriteFoodName);
         System.out.println("The Favorite food is now: " + this.getFavoriteFoodName());
-
     }
 
 //
