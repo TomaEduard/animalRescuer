@@ -163,14 +163,18 @@ public class Game {
 
     //    Food
     private void initFood() {
-        Food purina = new Food("Purina");
+        Food piccolo = new Food("Piccolo");
         Food pedigree = new Food("Pedigree");
         Food amiry = new Food("Amity");
         Food friskies = new Food("Friskies");
-        avaibleFood.add(purina);
+        Food unipro = new Food("Unipro");
+        Food wellness = new Food("Wellness");
+        avaibleFood.add(piccolo);
         avaibleFood.add(pedigree);
         avaibleFood.add(amiry);
         avaibleFood.add(friskies);
+        avaibleFood.add(unipro);
+        avaibleFood.add(wellness);
     }
 
     private void displayFood() {
@@ -242,8 +246,10 @@ public class Game {
     private void initActivities() {
         EntertainmentActivity activity1 = new EntertainmentActivity("walked");
         EntertainmentActivity activity2 = new EntertainmentActivity("swiming");
+        EntertainmentActivity activity3 = new EntertainmentActivity("dance");
         avaibleActivities[0] = activity1;
         avaibleActivities[1] = activity2;
+        avaibleActivities[2] = activity3;
     }
 
     private void displayActivities() {

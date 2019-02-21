@@ -29,7 +29,7 @@ public class Animal implements Runnable {
         this.gender = gender;
         this.favoriteFoodName = favoriteFoodName;
         this.favoriteActivityName = favoriteActivityName;
-        scheduler.scheduleAtFixedRate(this::run , 31, 31, TimeUnit.SECONDS);
+        scheduler.scheduleAtFixedRate(this::run , 40, 15, TimeUnit.SECONDS);
     }
 
     @Override
@@ -37,6 +37,13 @@ public class Animal implements Runnable {
         food.add("Royal");
         food.add("Amiry");
         food.add("Friskies");
+        food.add("Petkult");
+        food.add("Enjoy");
+        food.add("Green-Point");
+        food.add("Herrmanns");
+        food.add("N&D");
+        food.add("Piccolo");
+        food.add("Reddy");
 
         this.setFavoriteFoodName(food.get(new Random().nextInt(food.size() + 1)));
 
