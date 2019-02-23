@@ -93,13 +93,13 @@ public class Game {
 
         switch (action) {
             case 1:
-                Animal cat1 = new Cat("unknown", "White", 2, "Female", "Purina",
-                        "playing with ball", "Bengal", "Medium", 2.1);
+                Animal cat1 = new Cat("unknown", "White", 2, "Female", "Piccolo",
+                        "swiming", "Bengal", "Medium", 2.1);
                 this.animal = cat1;
                 break;
             case 2:
-                Animal dog1 = new Dog("unknown", "Brown", 1, "Male", "Purina",
-                        "playing with ball", "Bishon", "Small", 1.2);
+                Animal dog1 = new Dog("unknown", "Brown", 1, "Male", "Piccolo",
+                        "swimming", "Bishon", "Small", 1.2);
                 this.animal = dog1;
                 break;
 
@@ -132,7 +132,7 @@ public class Game {
             String RescuerName = scanner.nextLine();
             Rescuer rescuer = new Rescuer(RescuerName);
             this.rescuer = rescuer;
-            System.out.println("Hello " + RescuerName + ", and welcome to <<<Tamagotchi Game!>>>");
+            System.out.println("Hello " + RescuerName + ", and welcome to <<< Tamagotchi Game! >>>");
 
         } catch (InputMismatchException exception) {
             System.out.println("Re-enter a valid name");
@@ -191,8 +191,10 @@ public class Game {
         String nameFood = scanner.nextLine();
         Food newFood = new Food(nameFood);
         avaibleFood.add(newFood);
+        int number = avaibleFood.indexOf(newFood);
+        number += 1;
         System.out.println(newFood.getName() + " has been successfully added on the list on position " +
-                "# " + avaibleFood.indexOf(newFood));
+                "# " + number);
         displayFood();
     }
 
@@ -241,7 +243,7 @@ public class Game {
     //    activities
     private void initActivities() {
         EntertainmentActivity activity1 = new EntertainmentActivity("walked");
-        EntertainmentActivity activity2 = new EntertainmentActivity("swiming");
+        EntertainmentActivity activity2 = new EntertainmentActivity("swimming");
         EntertainmentActivity activity3 = new EntertainmentActivity("dance");
         avaibleActivities[0] = activity1;
         avaibleActivities[1] = activity2;
@@ -272,7 +274,7 @@ public class Game {
 
         this.avaibleActivities = newAvaibleActivities;
 
-//            }
+        displayActivities();
     }
 
     public void displayFavoriteFoodAndActivitiy() {

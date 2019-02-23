@@ -6,9 +6,6 @@ public class App {
         Game game = new Game();
         game.start();
 
-
-
-
         /*
 
         Rescuer firstRescuer = new Rescuer("Gigel");

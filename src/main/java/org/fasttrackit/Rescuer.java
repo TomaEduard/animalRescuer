@@ -19,13 +19,16 @@ public class Rescuer {
         this.moneyavaible = moneyavaible;
     }
 
-    //
+//
 
     public void feed(Animal animal, Food food) {
         if (hungerLevel > 1) {
             hungerLevel--;
             System.out.println(this.name + " just gave some " + food.getName() +
                     " to " + animal.getName() + " and now the hunger level is: " + hungerLevel);
+
+            System.out.println(animal.getFavoriteFoodName() + "." + food.getName());
+            System.out.println(animal.getFavoriteFoodName() == food.getName());
 
             if (animal.getFavoriteFoodName() == food.getName()) {
                 happinessLevel++;

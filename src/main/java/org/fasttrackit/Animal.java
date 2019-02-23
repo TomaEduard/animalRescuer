@@ -29,7 +29,7 @@ public class Animal implements Runnable {
         this.gender = gender;
         this.favoriteFoodName = favoriteFoodName;
         this.favoriteActivityName = favoriteActivityName;
-        scheduler.scheduleAtFixedRate(this::run, 40, 15, TimeUnit.SECONDS);
+        scheduler.scheduleAtFixedRate(this::run, 999, 999, TimeUnit.SECONDS);
     }
 
     @Override
