@@ -11,7 +11,6 @@ public class EntertainmentActivity {
 
 //
 
-
     public String getName() {
         return name;
     }

@@ -15,10 +15,6 @@ public class Food {
         this.name = name;
     }
 
-    public void addFoodItem(String item) {
-
-    }
-
 //
 
     public String getName() {

@@ -11,7 +11,6 @@ public class Veterinarian{
 
 //
 
-
     public String getName() {
         return name;
     }

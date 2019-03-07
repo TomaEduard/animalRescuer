@@ -1,17 +1,23 @@
-package org.fasttrackit;
+package org.fasttrackit.domain;
 
-public class Cat extends Animal {
+public class Dog extends Animal {
 
     private String race;
     private String waist;
     private double weight;
 
-    public Cat(String name, String color, double age, String gender, String favoriteFoodName, String favoriteActivityName, String race, String waist, double weight) {
-        super(name, color, age, gender, favoriteFoodName, favoriteActivityName);
+    public Dog(String name, String color, double age, String gender, String favoriteFoodName,
+               String favoriteActivityName, int hungerLevel, int happinessLevel, String race,
+               String waist, double weight) {
+        super(name, color, age, gender, favoriteFoodName, favoriteActivityName, hungerLevel, happinessLevel);
         this.race = race;
         this.waist = waist;
         this.weight = weight;
     }
+
+
+//
+
 
 //
 
@@ -39,14 +45,15 @@ public class Cat extends Animal {
         this.weight = weight;
     }
 
+
     @Override
     public void expressHappiness() {
-        System.out.println(getName() + " purrs. \uD83D\uDE3A");
+        System.out.println(getName() + " quits. \uD83D\uDC36 ");
     }
 
     @Override
     public String toString() {
-        return "Cat{" +
+        return "Dog{" +
                 "race='" + race + '\'' +
                 ", waist='" + waist + '\'' +
                 ", weight=" + weight +
