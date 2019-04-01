@@ -18,10 +18,8 @@ public class AnimalRepository {
 
     // Show All Animals
     public List<TopWinner> showAllAnimalsService() throws SQLException, IOException, ClassNotFoundException {
-
         // 1. Get a connection to database
         Connection connection = DatabaseConfiguration.getConnection();
-
         // 2. Create a statement
         Statement statement = connection.createStatement();
         // 3. Execute a SQL query
@@ -93,7 +91,6 @@ public class AnimalRepository {
         preparedStatement.setInt(10, topWinner.getGameplayed());
 
         preparedStatement.executeUpdate();
-
     }
 
     public TopWinner findAnimalOrCreateService(TopWinner topWinner) throws SQLException, IOException, ClassNotFoundException {
@@ -175,7 +172,6 @@ public class AnimalRepository {
         preparedStatement.setString(4, topWinner.getName());
 
         preparedStatement.executeUpdate();
-
     }
 
     //    hungerLevel
@@ -256,6 +252,7 @@ public class AnimalRepository {
     public void setGame(Game game) {
         this.game = game;
     }
+
 }
 
 

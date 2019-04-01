@@ -50,6 +50,7 @@ public class AnimalService {
         animalRepository.updateAnimalHappinesslevel(topWinner);
     }
 
+//    De ce sa nu punem lista si nu un obiect ?
     public TopWinnerListResponse getTopWinners() throws SQLException, IOException, ClassNotFoundException {
         System.out.println("*Retriving top winners.");
         List<TopWinner> topWinners = animalRepository.showAllAnimalsService();

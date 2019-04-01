@@ -53,18 +53,7 @@ public class Game {
         topWinner.setHungerLevel(animal.getHungerLevel());
         topWinner.setHappinessLevel(animal.getHappinessLevel());
 
-        System.out.println("--------topWinner.---------");
-        System.out.println(topWinner.getHungerLevel());
-        System.out.println(topWinner.getHappinessLevel());
-        System.out.println("--------animal.---------");
-        System.out.println(animal.getHungerLevel());
-        System.out.println(animal.getHappinessLevel());
-        System.out.println("--------hunger happiness---------");
-        System.out.println(rescuer.getHungerLevel());
-        System.out.println(rescuer.getHappinessLevel());
-
         printInstructions();
-
 
         initFood();
         initActivities();
